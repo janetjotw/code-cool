@@ -1,19 +1,29 @@
 # New Hugo Project
 
-This how-to document guides users in installing and running a Hugo server hosted and deployed through GitHub pages.
+## Overview
+
+This guide explains how to install and run a Hugo server hosted and deployed through GitHub pages.
 
 ## Install Hugo
 
+*Note*: This guide provides instructions that support a Macos.
+
+Run the below commands:
+
+1. Use brew command to install hugo
 `janetjose@Janets-MBP-2 ~ % brew install hugo`
 
+2. Check the version
 `janetjose@Janets-MBP-2 ~ % hugo version`
 
 hugo v0.138.0+extended+withdeploy darwin/arm64 BuildDate=2024-11-06T11:22:34Z VendorInfo=brew
 
+3. The command shows the current working directory.
 `janetjose@Janets-MBP-2 ~ % pwd`
 
 /Users/janetjose
 
+4. Create a new Hugo site
 `janetjose@Janets-MBP-2 ~ % mkdir learnhugo`
 
 `janetjose@Janets-MBP-2 ~ % pwd`
@@ -21,6 +31,8 @@ hugo v0.138.0+extended+withdeploy darwin/arm64 BuildDate=2024-11-06T11:22:34Z Ve
 /Users/janetjose
 
 `janetjose@Janets-MBP-2 ~ % hugo new site docs-as-code`
+
+```
 
 Congratulations! Your new Hugo site was created in /Users/janetjose/docs-as-code.
 
@@ -41,6 +53,9 @@ Just a few more steps...
 5. Start the embedded web server with the command "hugo server --buildDrafts".
 
 See documentation at https://gohugo.io/.
+
+```
+
 
 `janetjose@Janets-MBP-2 ~ % cd docs-as-code`
 
