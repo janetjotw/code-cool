@@ -6,11 +6,11 @@ This guide explains how to install and run a Hugo server hosted and deployed thr
 
 ## Install Hugo
 
-*Note*: This guide provides instructions that support a Macos.
+**Note**: This guide provides instructions that support a macOS.
 
 Run the below commands:
 
-1. Use brew command to install hugo
+1. Use the brew command to install Hugo
 `janetjose@Janets-MBP-2 ~ % brew install hugo`
 
 2. Check the version
@@ -71,27 +71,9 @@ archetypes	content		hugo.toml	layouts		themes
 
 assets		data		i18n		static
 
+6. Initialize your local git repository.
+
 `janetjose@Janets-MBP-2 docs-as-code % git init`
-
-hint: Using 'master' as the name for the initial branch. This default branch name
-
-hint: is subject to change. To configure the initial branch name to use in all
-
-hint: of your new repositories, which will suppress this warning, call:
-
-hint: 
-
-hint: 	git config --global init.defaultBranch <name>
-
-hint: 
-
-hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
-
-hint: 'development'. The just-created branch can be renamed via this command:
-
-hint: 
-
-hint: 	git branch -m <name>
 
 Initialized empty Git repository in /Users/janetjose/docs-as-code/.git/
 
@@ -111,6 +93,8 @@ janetjose@Janets-MBP-2 ~ % pwd
 
 
 `janetjose@Janets-MBP-2 ~ % cd docs-as-code`
+
+7. Create hugo.toml file
 
 `janetjose@Janets-MBP-2 docs-as-code % cat hugo.toml`
 
@@ -144,6 +128,8 @@ hugo: to add module requirements and sums:
 
 	hugo mod tidy
 
+ 8. Adding themes to the site
+
 janetjose@Janets-MBP-2 docs-as-code % git submodule add --depth 1 https://github.com/janettech/hugo-theme-relearn.git themes/hugo-theme-relearn
 
 ## Clone repo
@@ -165,6 +151,8 @@ Receiving objects: 100% (3/3), done.
 `janetjose@Janets-MBP-2 do-docs-as-code % ls`
 
 code-cool
+
+1. Adding markdown files to the folder content
 
 `janetjose@Janets-MBP-2 do-docs-as-code % mkdir content`
 
@@ -225,6 +213,8 @@ janetjose@Janets-MBP-2 do-docs-as-code % cd code-cool
 `janetjose@Janets-MBP-2 code-cool % ls`
 
 README.md	content
+
+2. Adding and commit files to the branch
 
 `janetjose@Janets-MBP-2 code-cool % git checkout -b new-branch-jose`
 
@@ -352,7 +342,9 @@ The file /Users/janetjose/do-docs-as-code/code-cool/git/config does not exist.
 
 `janetjose@Janets-MBP-2 code-cool % open .git/config `      
 
-### Paste the Personal Access Token into the “Password” field when you authenticate via the command line.
+### Create Personal Access Token on GitHub
+
+Paste the Personal Access Token into the “Password” field when you authenticate via the command line.
 
 `janetjose@Janets-MBP-2 code-cool % git remote set-url origin https://janetjotw@github.com/janetjotw/code-cool.git`
 
@@ -385,8 +377,6 @@ To https://github.com/janetjotw/code-cool.git
  * [new branch]      new-branch-jose -> new-branch-jose
 
 Branch 'new-branch-jose' set up to track remote branch 'new-branch-jose' from 'origin'.
-
-janetjose@Janets-MBP-2 code-cool % 
 
 
 
