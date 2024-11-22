@@ -1,5 +1,7 @@
 # New Hugo Project
 
+This how-to document guides users in installing and running a Hugo server hosted and deployed through GitHub pages.
+
 ## Install Hugo
 
 `janetjose@Janets-MBP-2 ~ % brew install hugo`
